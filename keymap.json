@@ -1,0 +1,31 @@
+[
+  {
+    "context": "Editor && vim_mode == insert && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "ctrl-j": "editor::ContextMenuNext",
+      "ctrl-k": "editor::ContextMenuPrev",
+      "ctrl-l": "editor::ConfirmCompletion",
+      "enter": "editor::ConfirmCodeAction"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && inline_completion && !showing_completions",
+    "bindings": {
+      "ctrl-l": "editor::AcceptInlineCompletion"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "shif-k": "editor::ShowSignatureHelp",
+      "g-d": "editor::GoToDeclaration",
+      "g-D": "editor::GoToDefinition"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-n": "workspace::ToggleLeftDock"
+    }
+  }
+]
