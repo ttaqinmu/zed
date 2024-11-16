@@ -14,9 +14,16 @@
     },
     "version": "2"
   },
-  "theme": "Ayu Dark",
+  "theme": "One Dark Mod",
   "vim_mode": true,
-  "font_family": "FiraCode Nerd Font Mono",
+  "buffer_font_family": "ZedMono Nerd Font Mono",
+  "buffer_font_weight": 500,
+  "buffer_font_features": {
+    "liga": true,
+    "calt": true,
+    "clig": true
+  },
+  "ui_font_family": "ZedMono Nerd Font Propo",
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "telemetry": {
@@ -24,4 +31,10 @@
     "metrics": false
   },
   "relative_line_numbers": true
+  // "languages": {
+  //   "rust": {
+  //     "formatter": "rustfmt",
+  //     "format_on_save": "on"
+  //   }
+  // }
 }
