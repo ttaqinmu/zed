@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "project_panel": {
+    "dock": "right"
+  },
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
@@ -30,7 +33,8 @@
     "diagnostics": false,
     "metrics": false
   },
-  "relative_line_numbers": true
+  "relative_line_numbers": true,
+  "cursor_blink": false
   // "languages": {
   //   "rust": {
   //     "formatter": "rustfmt",

@@ -27,5 +27,15 @@
       "g-d": "editor::GoToDeclaration",
       "g-D": "editor::GoToDefinition"
     }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "space g": ["task::Spawn", { "task_name": "lazygit" }],
+      "space f": ["tasl::Spawn", { "task_name": "search:project" }],
+      "space x": ["workspace::SendKeystrokes", "shift-w shift-q"],
+      "space t": ["workspace::SendKeystrokes", "ctrl-tab"],
+      "ctrl-f": "buffer_search::Deploy"
+    }
   }
 ]
